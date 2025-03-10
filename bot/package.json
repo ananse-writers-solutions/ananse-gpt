@@ -1,0 +1,21 @@
+{
+  "name": "ananse-gpt",
+  "version": "1.0.0",
+  "description": "Bot do Discord com IA rodando no Ollama via LangChain com foco em ajudar escritores de fantasia a planejarem histórias",
+  "main": "bot_discord.py",
+  "scripts": {
+    "venv:activate": "venv\/Scripts\/activate",
+    "bot": "yarn run venv:activate && py bot_discord.py",
+    "setup": "yarn install && py -m venv venv && yarn run venv:activate && pip install -r requirements.txt",
+    "start": "yarn run bot"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.3.0",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Rod",
+  "license": "MIT"
+}

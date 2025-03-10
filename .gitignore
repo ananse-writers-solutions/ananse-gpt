@@ -1,0 +1,28 @@
+# Node.js (API)
+api/node_modules/
+api/.env
+api/dist/
+api/.npm/
+api/.DS_Store
+
+# Python (Bot)
+bot/node_modules/
+bot/venv/
+bot/.env
+bot/__pycache__/
+bot/.DS_Store
+
+# Frontend (React + Vite)
+front/node_modules/
+front/.env
+front/dist/
+front/.DS_Store
+
+# Geral (Sistema Operacional e IDEs)
+*.log
+*.lock
+*.swp
+*.swo
+.vscode/
+.idea/
+.DS_Store
