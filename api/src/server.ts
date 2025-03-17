@@ -1,5 +1,4 @@
-import { App } from "./app"
+import { App } from "../src/app";
 
-const PORT = process.env.PORT || 4000;
-
-export default new App().server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+const app = new App();
+app.start();

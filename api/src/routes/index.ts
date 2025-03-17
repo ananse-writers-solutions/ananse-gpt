@@ -6,7 +6,6 @@ const authenticate = authMiddleware.authenticate.bind(authMiddleware);
 
 export { default as auth } from './AuthRoute'
 export { default as user } from './UserRoute'
-
-
+export { default as bot } from './BotRoute'
 
 export { authenticate };

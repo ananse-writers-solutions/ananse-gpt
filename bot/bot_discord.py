@@ -48,10 +48,12 @@ async def on_message(message):
     # Obter histórico do usuário e passar para o modelo
     response = conversation.invoke(message.content, config={"configurable": {"session_id": str(message.author.id)}})
 
-    await message.channel.send(response)
+    data = response.content
+    
+    await message.channel.send(data)
 
     # Processar comandos normalmente
-    await bot.process_commands(message)
+    await bot.process_commands(data)
 
 # Rodar o bot
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
